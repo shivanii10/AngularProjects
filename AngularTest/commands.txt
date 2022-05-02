@@ -1,0 +1,5 @@
+- To run the localhost
+  ng server
+
+- For creation of  components like Register and Login
+  ng g c <component-name>
