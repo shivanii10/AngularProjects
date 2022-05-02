@@ -1,0 +1,21 @@
+<h1>this is the <span>root app </span>page !</h1>
+<h2>{{title}}</h2>
+<!-- <app-login></app-login> -->
+<!-- <app-register></app-register> -->
+<router-outlet></router-outlet> //url routing 
+<br><br>
+<a routerLink="home">HomePage</a><br>
+<a routerLink="login">LoginPage</a><br>
+<a routerLink="register">RegisterPage</a>
+<br><br>
+-- one way binding --<br><br>
+
+name:{{name}}&nbsp;//String Interpolation<br> city:{{city}} <br><br>
+<input type="text" [value]="name">&nbsp;//Property Binding  <br><br>
+<button (click)="display()">CLICK</button>&nbsp;//Event Binding <br><br>
+
+-- two way binding --<br><br>
+name:{{name}}&nbsp;//String Interpolation<br><br>
+because of [(ngModel)] it got changed to two-way binding.<br><br>
+<input type="text" [(ngModel)]="name">&nbsp;//Property Binding  <br><br> 
+<button (click)="display()">CLICK</button>&nbsp;//Event Binding <br><br>
