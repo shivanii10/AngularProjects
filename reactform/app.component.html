@@ -1,0 +1,25 @@
+<div>   
+  <form [formGroup]="formdata">       
+  <input type= "text"  name="uname" placeholder="userName"  formControlName = "uname">      
+  <br/>          
+  <div *ngIf="formdata.controls['uname'].errors?.['required']">
+    username is required.    
+  </div><br>       
+
+  <div *ngIf="formdata.controls['uname'].errors?.['minLength']">
+    min length 6 digits    
+  </div><br>  
+     
+  
+  <input type= "password"  name="passwd" placeholder="password"  formControlName = "passwd">      
+  <div *ngIf="formdata.controls['passwd'].errors?.['required']">      
+    Password is required.    
+  </div><br>
+
+  <input type= "email"  name="email" placeholder="email"  formControlName = "email">    
+  <div *ngIf="formdata.controls['email'].errors?.['email']">      
+    email is required.    
+  </div><br>
+    
+      <br/>    
+       <input type="submit"  value="Click here">   </form></div> 
